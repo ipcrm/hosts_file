@@ -4,5 +4,6 @@ class hosts_file {
     group   => root,
     mode    => '0644',
     content => template('hosts_file/hosts.erb'),
+    noop    => true,
   }
 }
